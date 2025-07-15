@@ -707,7 +707,7 @@ body {
   align-items: center;
   gap: 2rem;
 }
-
+/* 
 .hero-status {
   display: inline-flex;
   align-items: center;
@@ -726,11 +726,11 @@ body {
   animation: fadeInUp 1s ease 0.3s forwards;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 20px rgba(220, 38, 38, 0.2);
-}
+} */
 
 .status-dot {
-  width: 10px;
-  height: 10px;
+  width: 1px;
+  height: 105px;
   background: var(--red-primary);
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
@@ -774,9 +774,10 @@ body {
 }
 
 .title-word.highlight {
-  color: var(--red-primary);
-  text-shadow: 0 0 30px var(--red-primary);
-  animation-delay: 1.4s;
+  color: #220b0b;
+  /* text-shadow: 0 0 19px var(--red-primary); */
+  text-shadow: 0 0 15px rgb(128, 255, 0);
+  animation-delay: 1s;
 }
 
 @keyframes wordSlideIn {
