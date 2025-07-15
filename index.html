@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kasam Thapa Magar - Bold Portfolio</title>
+    <title>Kasam Thapa Magar - Elite Developer</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <style></style>
   </head>
   <body>
     <!-- Custom Cursor -->
@@ -18,23 +17,32 @@
 
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
-      <div class="glitch-loader">INITIALIZING</div>
-      <div class="loading-progress">
-        <div class="loading-bar"></div>
+      <div class="loading-container">
+        <div class="glitch-loader">INITIALIZING</div>
+        <div class="loading-progress">
+          <div class="loading-bar"></div>
+        </div>
+        <div class="loading-text">Preparing Elite Experience...</div>
       </div>
     </div>
 
-    <!-- Navigation -->
-    <nav id="navbar">
+
+    <nav id="navbar" class="navbar">
       <div class="nav-container">
-        <div class="logo">KTM</div>
+        <div class="logo-container">
+          <div class="logo">KTM</div>
+          <div class="logo-subtitle">Elite Developer</div>
+        </div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <div class="nav-cta">
+          <a href="#contact" class="nav-hire-btn">Hire Me</a>
+        </div>
         <div class="mobile-menu-btn" id="mobileMenuBtn">
           <span></span>
           <span></span>
@@ -45,200 +53,512 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-    <!-- Scroll Indicator -->
-    <div class="scroll-indicator">
-      <div class="scroll-dot active" data-section="home"></div>
-      <div class="scroll-dot" data-section="about"></div>
-      <div class="scroll-dot" data-section="skills"></div>
-      <div class="scroll-dot" data-section="projects"></div>
-      <div class="scroll-dot" data-section="contact"></div>
+      <div class="mobile-menu-close" id="mobileMenuClose">&times;</div>
+      <div class="mobile-menu-content">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="mobile-menu-footer">
+          <a href="#contact" class="mobile-hire-btn">Let's Work Together</a>
+        </div>
+      </div>
     </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-      <div class="hero-bg"></div>
+      <!-- Background Elements -->
+      <div class="hero-bg">
+        <div class="bg-gradient"></div>
+        <div class="bg-pattern"></div>
+        <div class="bg-particles"></div>
+      </div>
+
+      <!-- Animated Grid -->
       <div class="hero-grid"></div>
 
-      <div class="floating-element">⚡</div>
-      <div class="floating-element">🔥</div>
-      <div class="floating-element">💻</div>
-      <div class="floating-element">🚀</div>
+      <!-- Floating Elements -->
+      <div class="floating-elements">
+        <div class="floating-element" data-speed="0.5">⚡</div>
+        <div class="floating-element" data-speed="0.3">🔥</div>
+        <div class="floating-element" data-speed="0.7">💻</div>
+        <div class="floating-element" data-speed="0.4">🚀</div>
+        <div class="floating-element" data-speed="0.6">⭐</div>
+        <div class="floating-element" data-speed="0.2">💎</div>
+      </div>
 
-      <div class="hero-content">
-        <div class="hero-greeting">Hello World!</div>
-        <h1 class="hero-title">
-          <span class="name-first">Kasam Thapa</span>
-          <span class="name-last">Magar</span>
-        </h1>
-        <div class="hero-subtitle">Full-Stack Developer</div>
-        <div class="hero-tagline">Code • Create • Conquer</div>
-        <p class="hero-description">
-          I transform ideas into powerful digital experiences. From sleek
-          frontends to robust backends, I craft solutions that don't just
-          work—they inspire and engage users worldwide.
-        </p>
-        <div class="hero-cta-container">
-          <a href="#projects" class="hero-cta">
-            View My Work
-            <span>→</span>
-          </a>
-          <a href="#contact" class="hero-cta hero-cta-secondary">
-            Let's Talk
-            <span>💬</span>
-          </a>
+      <!-- Main Hero Content -->
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- Status Badge -->
+          <div class="hero-status">
+            <div class="status-dot"></div>
+            <!-- <span>Available for Projects</span> -->
+          </div>
+          <div></div>
+
+
+          <!-- Main Title -->
+          <div class="hero-title-container">
+            <h1 class="hero-title">
+              <span class="title-line">
+                <span class="title-word">Kasam Thapa</span>
+                <!-- <span class="title-word">Thapa</span> -->
+              </span>
+              <span class="title-line">
+                <span class="title-word highlight">Magar</span>
+              </span>
+            </h1>
+            <div class="hero-subtitle">
+              <span class="subtitle-text">Elite Full-Stack Developer</span>
+              <div class="subtitle-underline"></div>
+            </div>
+          </div>
+
+          <!-- Hero Description -->
+          <div class="hero-description">
+            <p class="hero-text">
+              I craft
+              <span class="text-highlight"
+                >extraordinary digital experiences</span
+              >
+              that push boundaries and redefine possibilities. From cutting-edge
+              frontends to robust backends, I transform ambitious ideas into
+              <span class="text-highlight">powerful reality</span>.
+            </p>
+          </div>
+
+          <!-- Hero Actions -->
+          <div class="hero-actions">
+            <a href="#projects" class="hero-btn hero-btn-primary">
+              <span class="btn-text">View My Work</span>
+              <span class="btn-icon">→</span>
+              <div class="btn-glow"></div>
+            </a>
+            <a href="#contact" class="hero-btn hero-btn-secondary">
+              <span class="btn-text">Let's Talk</span>
+              <span class="btn-icon">💬</span>
+              <div class="btn-glow"></div>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-social">
+            <a href="#" class="social-link">
+              <span class="social-icon">📧</span>
+              <span class="social-text">Email</span>
+            </a>
+            <a href="#" class="social-link">
+              <span class="social-icon">💼</span>
+              <span class="social-text">LinkedIn</span>
+            </a>
+            <a href="#" class="social-link">
+              <span class="social-icon">🐙</span>
+              <span class="social-text">GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-label">Projects Completed</div>
+            <div class="stat-icon">🚀</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Years Experience</div>
+            <div class="stat-icon">⚡</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-label">Client Satisfaction</div>
+            <div class="stat-icon">💎</div>
+          </div>
         </div>
       </div>
 
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-number">50+</span>
-          <span class="stat-label">Projects</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">3+</span>
-          <span class="stat-label">Years</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Passion</span>
-        </div>
-      </div>
+      <!-- Scroll Indicator -->
+      <!-- <div class="scroll-indicator">
+        <div class="scroll-text">Scroll to explore</div>
+        <div class="scroll-arrow">↓</div>
+      </div> -->
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            I'm a
-            <span class="highlight">passionate full-stack developer</span> who
-            thrives on creating digital experiences that push boundaries and
-            challenge conventions.
-          </p>
-          <p>
-            With expertise spanning
-            <span class="highlight">modern frontend frameworks</span>,
-            <span class="highlight">scalable backend architectures</span>, and
-            <span class="highlight">intuitive UI/UX design</span>, I bring ideas
-            to life with precision and innovation.
-          </p>
-          <p>
-            My mission is to craft solutions that don't just work—they
-            <span class="highlight">inspire, engage, and transform</span> the
-            way people interact with technology.
-          </p>
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">The story behind the code</p>
         </div>
-        <div class="about-visual">
-          <div class="tech-card tech-card-1">
-            <span class="tech-icon">⚛️</span>
-            <div class="tech-title">Frontend</div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <div class="about-intro">
+              <h3 class="about-heading">Crafting Digital Excellence</h3>
+              <p class="about-description">
+                I'm a
+                <span class="text-highlight"
+                  >passionate full-stack developer</span
+                >
+                who thrives on creating digital experiences that push boundaries
+                and challenge conventions. With expertise spanning modern
+                frontend frameworks, scalable backend architectures, and
+                intuitive UI/UX design.
+              </p>
+            </div>
+
+            <div class="about-details">
+              <div class="detail-item">
+                <div class="detail-icon">🎯</div>
+                <div class="detail-content">
+                  <h4>Mission</h4>
+                  <p>
+                    Transform ideas into powerful digital solutions that inspire
+                    and engage users worldwide.
+                  </p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-icon">⚡</div>
+                <div class="detail-content">
+                  <h4>Approach</h4>
+                  <p>
+                    Clean, maintainable code with beautiful, functional user
+                    experiences that make a difference.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a href="#" class="download-btn">
+                <span class="btn-icon">📄</span>
+                <span class="btn-text">Download Resume</span>
+                <div class="btn-shine"></div>
+              </a>
+            </div>
           </div>
-          <div class="tech-card tech-card-2">
-            <span class="tech-icon">⚡</span>
-            <div class="tech-title">Backend</div>
-          </div>
-          <div class="tech-card tech-card-3">
-            <span class="tech-icon">🎨</span>
-            <div class="tech-title">Design</div>
+
+          <div class="about-visual">
+            <div class="visual-container">
+              <div class="tech-orbit">
+                <div class="tech-card tech-frontend">
+                  <div class="tech-icon">⚛️</div>
+                  <div class="tech-title">Frontend</div>
+                  <div class="tech-desc">React, Vue, TypeScript</div>
+                </div>
+                <div class="tech-card tech-backend">
+                  <div class="tech-icon">⚡</div>
+                  <div class="tech-title">Backend</div>
+                  <div class="tech-desc">Node.js, Python, APIs</div>
+                </div>
+                <div class="tech-card tech-design">
+                  <div class="tech-icon">🎨</div>
+                  <div class="tech-title">Design</div>
+                  <div class="tech-desc">UI/UX, Figma, Creative</div>
+                </div>
+              </div>
+              <div class="center-avatar">
+                <div class="avatar-ring"></div>
+                <div class="avatar-content">👨‍💻</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
-      <h2 class="section-title">Tech Arsenal</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <span class="skill-icon">🔥</span>
-          <h3 class="skill-title">Frontend</h3>
-          <p class="skill-desc">
-            React, Vue.js, TypeScript, Next.js, Modern CSS, Tailwind
-          </p>
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Tech Arsenal</h2>
+          <p class="section-subtitle">Weapons of choice for digital warfare</p>
         </div>
-        <div class="skill-card">
-          <span class="skill-icon">⚡</span>
-          <h3 class="skill-title">Backend</h3>
-          <p class="skill-desc">
-            Node.js, Python, Express, FastAPI, PostgreSQL, MongoDB
-          </p>
-        </div>
-        <div class="skill-card">
-          <span class="skill-icon">🎯</span>
-          <h3 class="skill-title">Design</h3>
-          <p class="skill-desc">
-            UI/UX, Figma, Adobe Suite, Animation, Prototyping
-          </p>
-        </div>
-        <div class="skill-card">
-          <span class="skill-icon">🚀</span>
-          <h3 class="skill-title">DevOps</h3>
-          <p class="skill-desc">
-            Docker, AWS, CI/CD, Performance, Security, Monitoring
-          </p>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">🔥</div>
+              <h3 class="category-title">Frontend Mastery</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95"></div>
+                </div>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">TypeScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Next.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88"></div>
+                </div>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Vue.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+                <span class="skill-percent">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">⚡</div>
+              <h3 class="category-title">Backend Power</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Node.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92"></div>
+                </div>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="87"></div>
+                </div>
+                <span class="skill-percent">87%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">PostgreSQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MongoDB</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="83"></div>
+                </div>
+                <span class="skill-percent">83%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">🎨</div>
+              <h3 class="category-title">Design & UX</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">UI/UX Design</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88"></div>
+                </div>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Figma</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Adobe Suite</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Prototyping</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="82"></div>
+                </div>
+                <span class="skill-percent">82%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">🚀</div>
+              <h3 class="category-title">DevOps & Tools</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Docker</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">AWS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">CI/CD</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="78"></div>
+                </div>
+                <span class="skill-percent">78%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Git</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95"></div>
+                </div>
+                <span class="skill-percent">95%</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <h2 class="section-title">Featured Work</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image">🌐</div>
-          <div class="project-content">
-            <h3 class="project-title">E-Commerce Beast</h3>
-            <p class="project-desc">
-              A high-performance e-commerce platform with real-time inventory
-              management, advanced analytics dashboard, and seamless payment
-              integration.
-            </p>
-            <div class="project-tags">
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Stripe</span>
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-subtitle">Showcasing digital excellence</p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <a href="#" class="project-btn primary">View Live</a>
+                  <a href="#" class="project-btn secondary">View Code</a>
+                </div>
+              </div>
+              <div class="project-badge">Featured</div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">E-Commerce Platform</div>
+              <h3 class="project-title">ShopMaster Pro</h3>
+              <p class="project-description">
+                A comprehensive e-commerce solution with real-time inventory
+                management, advanced analytics dashboard, AI-powered
+                recommendations, and seamless payment integration. Built for
+                scale and performance.
+              </p>
+              <div class="project-features">
+                <span class="feature">Real-time Analytics</span>
+                <span class="feature">AI Recommendations</span>
+                <span class="feature">Multi-vendor Support</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">📱</div>
-          <div class="project-content">
-            <h3 class="project-title">Task Dominator</h3>
-            <p class="project-desc">
-              Revolutionary project management tool with AI-powered insights,
-              real-time collaboration features, and advanced automation
-              workflows.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Vue.js</span>
-              <span class="tag">Express</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">Socket.io</span>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <a href="#" class="project-btn primary">View Live</a>
+                  <a href="#" class="project-btn secondary">View Code</a>
+                </div>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Project Management</div>
+              <h3 class="project-title">TaskFlow Elite</h3>
+              <p class="project-description">
+                Revolutionary project management tool with AI-powered insights,
+                real-time collaboration, advanced automation workflows, and
+                comprehensive team analytics.
+              </p>
+              <div class="project-features">
+                <span class="feature">AI Insights</span>
+                <span class="feature">Real-time Collaboration</span>
+                <span class="feature">Automation</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">🎨</div>
-          <div class="project-content">
-            <h3 class="project-title">Design System Pro</h3>
-            <p class="project-desc">
-              Comprehensive design system with 100+ reusable components,
-              automated documentation, and seamless developer experience.
-            </p>
-            <div class="project-tags">
-              <span class="tag">React</span>
-              <span class="tag">Storybook</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Figma</span>
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <a href="#" class="project-btn primary">View Live</a>
+                  <a href="#" class="project-btn secondary">View Code</a>
+                </div>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Project Management</div>
+              <h3 class="project-title">TaskFlow Elite</h3>
+              <p class="project-description">
+                Revolutionary project management tool with AI-powered insights,
+                real-time collaboration, advanced automation workflows, and
+                comprehensive team analytics.
+              </p>
+              <div class="project-features">
+                <span class="feature">AI Insights</span>
+                <span class="feature">Real-time Collaboration</span>
+                <span class="feature">Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <a href="#" class="project-btn primary">View Live</a>
+                  <a href="#" class="project-btn secondary">View Code</a>
+                </div>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Storybook</span>
+                <span class="tech-tag">TypeScript</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Design System</div>
+              <h3 class="project-title">DesignCore Pro</h3>
+              <p class="project-description">
+                Comprehensive design system with 100+ reusable components,
+                automated documentation, theme customization, and seamless
+                developer experience across teams.
+              </p>
+              <div class="project-features">
+                <span class="feature">100+ Components</span>
+                <span class="feature">Auto Documentation</span>
+                <span class="feature">Theme System</span>
+              </div>
             </div>
           </div>
         </div>
@@ -246,22 +566,172 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-      <h2 class="section-title">Let's Build Together</h2>
-      <div class="contact-content">
-        <p class="contact-desc">
-          Ready to create something extraordinary? Whether you have a project in
-          mind or just want to chat about tech, I'm always excited to
-          collaborate with passionate people and innovative companies.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:kasam@example.com" class="contact-link">Email Me</a>
-          <a href="#" class="contact-link">LinkedIn</a>
-          <a href="#" class="contact-link">GitHub</a>
-          <a href="#" class="contact-link">Resume</a>
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Let's Create Together</h2>
+          <p class="section-subtitle">Ready to bring your vision to life?</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-intro">
+              <h3 class="contact-heading">Start Your Project</h3>
+              <p class="contact-description">
+                Whether you have a groundbreaking idea or need to elevate your
+                existing digital presence, I'm here to transform your vision
+                into reality. Let's discuss how we can create something
+                extraordinary together.
+              </p>
+            </div>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">📧</div>
+                <div class="method-content">
+                  <h4 class="method-title">Email</h4>
+                  <p class="method-text">kasam@example.com</p>
+                  <a href="mailto:kasam@example.com" class="method-link"
+                    >Send Email</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">📱</div>
+                <div class="method-content">
+                  <h4 class="method-title">Phone</h4>
+                  <p class="method-text">+1 (555) 123-4567</p>
+                  <a href="tel:+15551234567" class="method-link">Call Now</a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">📍</div>
+                <div class="method-content">
+                  <h4 class="method-title">Location</h4>
+                  <p class="method-text">San Francisco, CA</p>
+                  <span class="method-link">Available Worldwide</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form id="contactForm" class="contact-form">
+              <div class="form-header">
+                <h3 class="form-title">Send Message</h3>
+                <p class="form-subtitle">Let's discuss your project</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-input"
+                  placeholder="Project subject"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  rows="5"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-icon">→</span>
+                <div class="btn-loading">
+                  <div class="loading-spinner"></div>
+                </div>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">KTM</div>
+            <p class="footer-tagline">
+              Crafting digital excellence, one line of code at a time.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-section">
+              <h4 class="footer-title">Navigation</h4>
+              <ul class="footer-list">
+                <li><a href="#home" class="footer-link">Home</a></li>
+                <li><a href="#about" class="footer-link">About</a></li>
+                <li><a href="#skills" class="footer-link">Skills</a></li>
+                <li><a href="#projects" class="footer-link">Projects</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h4 class="footer-title">Connect</h4>
+              <ul class="footer-list">
+                <li><a href="#" class="footer-link">LinkedIn</a></li>
+                <li><a href="#" class="footer-link">GitHub</a></li>
+                <li><a href="#" class="footer-link">Email</a></li>
+                <li><a href="#" class="footer-link">Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2024 Kasam Thapa Magar. All rights reserved.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-icon">📧</a>
+            <a href="#" class="social-icon">💼</a>
+            <a href="#" class="social-icon">🐙</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
