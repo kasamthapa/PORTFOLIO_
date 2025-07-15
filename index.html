@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasam Thapa Magar - Bold Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="glitch-loader">INITIALIZING</div>
+      <div class="loading-progress">
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">KTM</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-dot active" data-section="home"></div>
+      <div class="scroll-dot" data-section="about"></div>
+      <div class="scroll-dot" data-section="skills"></div>
+      <div class="scroll-dot" data-section="projects"></div>
+      <div class="scroll-dot" data-section="contact"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+
+      <div class="floating-element">⚡</div>
+      <div class="floating-element">🔥</div>
+      <div class="floating-element">💻</div>
+      <div class="floating-element">🚀</div>
+
+      <div class="hero-content">
+        <div class="hero-greeting">Hello World!</div>
+        <h1 class="hero-title">
+          <span class="name-first">Kasam Thapa</span>
+          <span class="name-last">Magar</span>
+        </h1>
+        <div class="hero-subtitle">Full-Stack Developer</div>
+        <div class="hero-tagline">Code • Create • Conquer</div>
+        <p class="hero-description">
+          I transform ideas into powerful digital experiences. From sleek
+          frontends to robust backends, I craft solutions that don't just
+          work—they inspire and engage users worldwide.
+        </p>
+        <div class="hero-cta-container">
+          <a href="#projects" class="hero-cta">
+            View My Work
+            <span>→</span>
+          </a>
+          <a href="#contact" class="hero-cta hero-cta-secondary">
+            Let's Talk
+            <span>💬</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Years</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Passion</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a
+            <span class="highlight">passionate full-stack developer</span> who
+            thrives on creating digital experiences that push boundaries and
+            challenge conventions.
+          </p>
+          <p>
+            With expertise spanning
+            <span class="highlight">modern frontend frameworks</span>,
+            <span class="highlight">scalable backend architectures</span>, and
+            <span class="highlight">intuitive UI/UX design</span>, I bring ideas
+            to life with precision and innovation.
+          </p>
+          <p>
+            My mission is to craft solutions that don't just work—they
+            <span class="highlight">inspire, engage, and transform</span> the
+            way people interact with technology.
+          </p>
+        </div>
+        <div class="about-visual">
+          <div class="tech-card tech-card-1">
+            <span class="tech-icon">⚛️</span>
+            <div class="tech-title">Frontend</div>
+          </div>
+          <div class="tech-card tech-card-2">
+            <span class="tech-icon">⚡</span>
+            <div class="tech-title">Backend</div>
+          </div>
+          <div class="tech-card tech-card-3">
+            <span class="tech-icon">🎨</span>
+            <div class="tech-title">Design</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="section-title">Tech Arsenal</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon">🔥</span>
+          <h3 class="skill-title">Frontend</h3>
+          <p class="skill-desc">
+            React, Vue.js, TypeScript, Next.js, Modern CSS, Tailwind
+          </p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">⚡</span>
+          <h3 class="skill-title">Backend</h3>
+          <p class="skill-desc">
+            Node.js, Python, Express, FastAPI, PostgreSQL, MongoDB
+          </p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🎯</span>
+          <h3 class="skill-title">Design</h3>
+          <p class="skill-desc">
+            UI/UX, Figma, Adobe Suite, Animation, Prototyping
+          </p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🚀</span>
+          <h3 class="skill-title">DevOps</h3>
+          <p class="skill-desc">
+            Docker, AWS, CI/CD, Performance, Security, Monitoring
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">Featured Work</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">🌐</div>
+          <div class="project-content">
+            <h3 class="project-title">E-Commerce Beast</h3>
+            <p class="project-desc">
+              A high-performance e-commerce platform with real-time inventory
+              management, advanced analytics dashboard, and seamless payment
+              integration.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Stripe</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">📱</div>
+          <div class="project-content">
+            <h3 class="project-title">Task Dominator</h3>
+            <p class="project-desc">
+              Revolutionary project management tool with AI-powered insights,
+              real-time collaboration features, and advanced automation
+              workflows.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Vue.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Socket.io</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">🎨</div>
+          <div class="project-content">
+            <h3 class="project-title">Design System Pro</h3>
+            <p class="project-desc">
+              Comprehensive design system with 100+ reusable components,
+              automated documentation, and seamless developer experience.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Storybook</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Let's Build Together</h2>
+      <div class="contact-content">
+        <p class="contact-desc">
+          Ready to create something extraordinary? Whether you have a project in
+          mind or just want to chat about tech, I'm always excited to
+          collaborate with passionate people and innovative companies.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:kasam@example.com" class="contact-link">Email Me</a>
+          <a href="#" class="contact-link">LinkedIn</a>
+          <a href="#" class="contact-link">GitHub</a>
+          <a href="#" class="contact-link">Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
