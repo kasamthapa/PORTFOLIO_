@@ -774,10 +774,10 @@ body {
 }
 
 .title-word.highlight {
-  color: #220b0b;
-  /* text-shadow: 0 0 19px var(--red-primary); */
-  text-shadow: 0 0 15px rgb(128, 255, 0);
-  animation-delay: 1s;
+  color: #C83F12;
+  text-shadow: 0 0 20px var(--red-primary);
+
+  animation-delay: 4s;
 }
 
 @keyframes wordSlideIn {
