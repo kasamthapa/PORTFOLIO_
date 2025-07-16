@@ -1601,10 +1601,16 @@ body {
   box-shadow: var(--shadow-large);
   border-color: var(--red-primary);
 }
-
+/* .project-img{
+  max-height:;
+  max-width: 700px;
+} */
 .project-image {
   height: 280px;
-  background: linear-gradient(135deg, var(--red-dark), var(--red-primary));
+  /* background: linear-gradient(135deg, var(--red-dark), var(--red-primary));
+   */
+background: url("https://static.wixstatic.com/media/6022aa_d3d937969b1a4ac08cb2aefe9a0fad32~mv2.jpg/v1/fill/w_560,h_778,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6022aa_d3d937969b1a4ac08cb2aefe9a0fad32~mv2.jpg");
+background-size: cover;
   position: relative;
   overflow: hidden;
   display: flex;
